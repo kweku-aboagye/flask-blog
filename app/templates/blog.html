@@ -70,6 +70,18 @@
         </div>
         <h1>{{ title }}</h1>
     </div>
+
+    <div class=postbox>
+        {{ wtf.quick_form(form) }}
+    </div>
+
+
+    <div class="post">
+        {% if post != none %}
+        {{ post }}
+        {% endif %}
+    </div>
+
 </body>
 
 </html>
