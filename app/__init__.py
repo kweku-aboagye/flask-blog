@@ -20,12 +20,12 @@ def index():
 
 @app.route('/contact')
 def contact():
-    return render_template('contacts.html', title="Firstname Lastname", url=os.getenv("URL"))
+    return render_template('contacts.html', title="Contact", url=os.getenv("URL"))
 
 @app.route('/blog')
 def blog():
-    return render_template('blog.html', title="Firstname Lastname", url=os.getenv("URL"))
+    return render_template('blog.html', title="Blog", url=os.getenv("URL"))
 
 @app.route('/projects')
 def projects():
-    return render_template('projects.html', title="Firstname Lastname", url=os.getenv("URL"))
+    return render_template('projects.html', title="Projects", url=os.getenv("URL"))
