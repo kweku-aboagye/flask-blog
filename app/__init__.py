@@ -76,3 +76,10 @@ def projects():
 		page = 1
 	
 	return render_template('projects.html', title="Projects", url=os.getenv("URL"), projects=projects_names,pag = page)
+
+
+@app.route('/health', methods=['GET'])
+def health(request, response):
+	return response.status_code == 200
+
+	
