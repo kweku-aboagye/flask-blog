@@ -79,7 +79,5 @@ def projects():
 
 
 @app.route('/health', methods=['GET'])
-def health(request, response):
-	return response.status_code == 200
-
-	
+def health():
+	return "Works"
