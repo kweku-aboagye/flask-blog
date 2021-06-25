@@ -1,6 +1,7 @@
-# Flask-Blog
+# Flask-folio
 
-Minimal Flask template to get started on your blog application for MLH Fellowship Production Engineering track.
+This is a simple and minimal portfolio website. 
+Backend built with Python and Flask. Fronted=nd built with HTML, CSS, JS and bootstrap
  
 
 ## Installation
@@ -32,7 +33,15 @@ $ export FLASK_ENV=development
 $ flask run
 ```
 
+
+## Try it out here
+
+http://kwekuaboagye.duckdns.org/
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+## Sneak Peak
