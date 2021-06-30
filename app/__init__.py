@@ -8,18 +8,16 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired
 import smtplib
+from . import db
 
 load_dotenv()
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] =\
-    'sqlite:///' + os.path.join(basedir, 'data.sqlite')
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['DATABASE'] = os.path.join(os.getcwd(), 'flask.sqlite')
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
-db = SQLAlchemy(app)
+db.init_app(app)
 bootstrap = Bootstrap(app)
 
 

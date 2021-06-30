@@ -2,3 +2,7 @@
 __pycache__
 *.pyc
 .env
+flask.sqlite
+.vscode
+app/__pycache__
+python3-virtualenv
