@@ -17,10 +17,4 @@
 .history
 .ionide
 
-.venv
-__pycache__
-*.pyc
-.env
-
-
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
