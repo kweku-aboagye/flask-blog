@@ -70,7 +70,6 @@ def index():
 
 @app.route("/contact")
 def contact():
-
     return render_template("contacts.html", title="Contact", url=os.getenv("URL"))
 
 
